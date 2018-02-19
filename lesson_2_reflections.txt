@@ -1,21 +1,31 @@
 What happens when you initialize a repository? Why do you need to do it?
-To create a repository in a working directory so that git can execute commands.
+	
+	To create a repository in a working directory so that git can execute commands.
 
 How is the staging area different from the working directory and the repository?
-It can bundle up multiple files into one commit, saves times and makes it easy to make logical commits.
+	
+	It can bundle up multiple files into one commit, saves times and makes it easy to make logical commits.
 
 What value do you think it offers?
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+	It definitely gives you room to experiment and not mess with the final branch code too much.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+How can you use the staging area to make sure you have one commit per logical change?
+	
+	You can use git status to verify that you have only the files you want, also you can git diff --staged to verify that the changes make sense to existing commits.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+	When you want to make a major change but do not want to change back and forth with HEAD, as when making different version of the software or making a dramatic change.
 
 How do the diagrams help you visualize the branch structure?
+	
+	It helps to know which commits are in which branch, and visualize any new branches and detached HEADs, in case I want to make changes and save it/not.
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	Creates one master branch, the diagram helps us to understand that the current master branch is the result of two different branches, so that we can understand where the commits come from, logically speaking.
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
-manually?
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	Automatic merging in unambiguous code is quicker, but manual merging allows you to detect which are areas you really want to keep/delete and also helps in collaborative works where multiple people alter the code.
